@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment & secrets
+.env
+.testEnvVars
+
+# AI working space (local only — not shared)
+ai/
+
+# Personal AI tool config
+claude.md
+.cursorrules
+.antigravityrules
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# TypeScript
+*.tsbuildinfo
