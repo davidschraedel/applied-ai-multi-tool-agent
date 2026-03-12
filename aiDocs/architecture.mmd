@@ -1,0 +1,55 @@
+flowchart TD
+    User["🧑 User\n(Browser)"]
+
+    subgraph UI["Web UI Layer"]
+        HTML["public/index.html\n#chat-input · #send-btn · #messages"]
+        Server["src/server.ts\nExpress · POST /api/chat"]
+    end
+
+    subgraph Agent["Agent Layer · src/agent.ts"]
+        React["createReactAgent\n@langchain/langgraph/prebuilt"]
+        Memory["Session Memory\nMap&lt;sessionId, BaseMessage[]&gt;"]
+        LLM["ChatAnthropic\nclaude-3-5-sonnet"]
+    end
+
+    subgraph Tools["Tools · src/tools/"]
+        Calc["calculator.ts\nmathjs · zod"]
+        Search["webSearch.ts\nTavilySearch · zod"]
+        RAG["rag.ts\nMemoryVectorStore · zod"]
+    end
+
+    subgraph RAGInfra["RAG Infrastructure"]
+        Docs["src/docs/\n5+ .txt files"]
+        Splitter["RecursiveCharacterTextSplitter\nchunk: 500 · overlap: 50"]
+        Embeddings["OpenAIEmbeddings\ntext-embedding-3-small"]
+        VectorStore["MemoryVectorStore\n@langchain/classic"]
+    end
+
+    subgraph External["External APIs"]
+        Anthropic["Anthropic API\nANTHROPIC_API_KEY"]
+        OpenAI["OpenAI API\nOPENAI_API_KEY"]
+        Tavily["Tavily API\nTAVILY_API_KEY"]
+    end
+
+    Logger["src/logger.ts\npino · JSON structured"]
+
+    User -->|"POST /api/chat\n{message, sessionId}"| Server
+    Server --> Memory
+    Memory -->|"messages[]"| React
+    React --> LLM
+    LLM -->|"tool selection"| Calc
+    LLM -->|"tool selection"| Search
+    LLM -->|"tool selection"| RAG
+    React -->|"agent reply"| Server
+    Server -->|"JSON response"| User
+
+    Docs --> Splitter --> Embeddings --> VectorStore
+    RAG --> VectorStore
+    Embeddings --> OpenAI
+    Search --> Tavily
+    LLM --> Anthropic
+
+    Calc -.-> Logger
+    Search -.-> Logger
+    RAG -.-> Logger
+    Server -.-> Logger

@@ -8,16 +8,18 @@
 |---|---|
 | Original instructor requirements (verbatim) | `aiDocs/project-requirements.md` |
 | Requirements & scope | `aiDocs/PRD.md` |
-| What to build & in what order | `ai/roadmaps/2026-03-09_ai-agent_plan.md` |
-| Execution checklist | `ai/roadmaps/2026-03-09_ai-agent_roadmap.md` |
-| Code style | `aiDocs/coding-style.md` *(to be created)* |
-| Architecture diagram | `aiDocs/architecture.md` *(to be created)* |
-| Change history | `aiDocs/changelog.md` *(to be created)* |
+| MVP scope & complexity warnings | `aiDocs/mvp.md` |
+| Tech stack, import paths, code patterns | `aiDocs/tech-stack-research.md` |
+| Implementation approach (WHAT & HOW) | `ai/roadmaps/2026-03-09_ai-agent_plan.md` |
+| Execution checklist (current) | `ai/roadmaps/2026-03-12_ai-agent_roadmap.md` |
+| Code style & git conventions | `aiDocs/coding-style.md` |
+| Architecture diagram | `aiDocs/architecture.mmd` |
+| Change history | `aiDocs/changelog.md` |
 
 ---
 
 ## Tech Stack
-See **Dependencies & Tech Stack** section in `ai/roadmaps/2026-03-09_ai-agent_plan.md`
+See `aiDocs/tech-stack-research.md` — includes correct import paths, API gotchas, and code patterns.
 
 ---
 
@@ -25,6 +27,6 @@ See **Dependencies & Tech Stack** section in `ai/roadmaps/2026-03-09_ai-agent_pl
 - Return errors from tools — don't throw (let the LLM interpret and retry)
 - Always set an iteration limit on the agent loop (circuit breaker)
 - Never commit `.env` or `ai/`
-- Update `aiDocs/changelog.md` after every commit
+- **Update `aiDocs/changelog.md` after every commit** — what changed and why, 1–2 lines, not how
 
 
