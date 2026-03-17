@@ -8,7 +8,7 @@ import logger from "./logger.js";
 
 // ── LLM ──────────────────────────────────────────────────────────────────────
 const model = new ChatAnthropic({
-  model: "claude-3-5-sonnet-20241022",
+  model: "claude-3-haiku-20240307",
   temperature: 0,
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
