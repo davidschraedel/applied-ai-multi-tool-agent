@@ -8,6 +8,7 @@ import { MemoryVectorStore } from "@langchain/classic/vectorstores/memory";
 import { RecursiveCharacterTextSplitter } from "@langchain/textsplitters";
 import { DirectoryLoader } from "@langchain/classic/document_loaders/fs/directory";
 import { TextLoader } from "@langchain/classic/document_loaders/fs/text";
+import { CSVLoader } from "@langchain/community/document_loaders/fs/csv";
 import logger from "../logger.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -28,9 +29,11 @@ async function getVectorStore(): Promise<MemoryVectorStore> {
   const docsDir = path.join(__dirname, "../docs");
   logger.info({ event: "rag_init", docsDir }, "Loading documents for RAG");
 
-  // Load all .txt files from src/docs/
+  // Load .txt and .csv files from src/docs/
+  // CSVLoader creates one Document per row — better for tabular data retrieval
   const loader = new DirectoryLoader(docsDir, {
     ".txt": (filePath: string) => new TextLoader(filePath),
+    ".csv": (filePath: string) => new CSVLoader(filePath),
   });
   const rawDocs = await loader.load();
 
