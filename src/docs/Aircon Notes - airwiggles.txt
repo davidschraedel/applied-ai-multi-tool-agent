@@ -1,0 +1,901 @@
+﻿Footsteps
+Unity and Wwise
+Basics
+Trigger
+Footsteps sound is triggered
+
+
+Material
+Material being walked on
+Collision zones
+
+
+Flourish and Expansion
+Heels and toes
+* Play both heel and then toe sounds, rather than one foot sound
+* Enables different sound for crouching
+stepping speed
+starting and stopping
+scuffs on angles and hills
+Weight and speed
+Layers - depth in layers, ground, etc.
+Material properties
+* Absorption, reverberance, creakiness
+Jumps, landing, shoe type, exertions
+
+
+Every Tool is a Character
+* ASMR audio, like popcorn
+Feel delightful
+Since the scope of the game is small, you can afford to go deep or go overboard.
+* Don’t go overboard.
+* It becomes a thing of priorities, what is most important, iterating on what is really necessary
+Creature Vocalizations
+Creating audio nightmares with a human voice
+Voice acting creatures
+* Starts with mimicry
+* Sustainability:
+   * sustaining the vocal effect: this is the identity of the character. If you can no longer create the same sound with the vocal effect (some are uncomfortable), then the character no longer exists.
+* Variation
+   * We create the same inflections and sounds in creatures as we would in human sound
+   * Timing, context, subjects, key elements - mostly for human-like creatures
+   * Quicker you do this, the less time you vocalize, the more you save your voice
+* Voice acting are probably 1% or less of industry. Most is animal sound libraries, or common plugins (dehumaniser) for creature creation.
+   * Animal sound library challenges
+      * Don’t know the context in which that sound was recorded
+         * You need it to specifically sound like fear, anger, joy, etc.
+         * Perception comes from outside, intention from within.
+      * Voice actors can create sound with intention, easily.
+* Basically vocal stunt performers
+   * Originality
+   * Can save time
+   * Vocal archetype - people are expecting some types of voices for specific creatures - this makes it believable to them, it meets their expectations
+* Vocal techniques
+   * Creaking
+   * Inhaling/regressive sound
+   * Polyphonic splitting
+   * Ventricular fold - mucous
+      * Grunting
+      * Throat singing
+   * Uvula
+      * Classic alien movie sound
+      * Smaller sounds
+      * Aryepiglottic fold
+   * Soft palate tissue
+      * Can do pitches
+* Voice layering
+   * Low, medium, and high frequency sounds together
+      * Linear or nonlinear (matching tonally, or not)
+* Tools:
+   * PVC pipe, etc.
+   * Will manipulate sound, but you will be stuck with that sound in the recording whether it is desired or not. Be intentional
+* Vocal health
+   * A lifestyle thing, sleep diet, practice, etc.
+   * Have to practice, like singing, it’s a skill
+
+
+How to Craft a Soundtrack Your Players Will Never Forget
+* Ruslana Kruchek
+Soundtrack should:
+Is unique and recognizable
+* It helps the game stand out from the crowd
+Need to initiate this. Many clients ask to create something like their reference tracks.
+Explain that if you are trying to recreate successes, you are not unique. You are already losing the battle. May become not new, cliche, etc.
+Establish this as your position
+Evokes Emotions and Associations
+* Thus creates a lasting emotional impact
+Needs to create associations, have deep impact.
+Use emotional codes that are recognizable or relevant to the audience
+Enhances the gameplay
+* Supports the atmosphere, intensifies immersion, and complements mechanics.
+You need to know as much as possible about the game, technical details, how the game works, to make a soundtrack that will be truly part of the game
+Audio DNA
+* Game audio DNA is an audible expression of the game
+   * Aligned with vision, objectives, target audience, visuals, game mechanics, marketing, and promotion
+* A track, usually main theme, that uniquely combines various audio elements
+   * like key, instrumentation, arrangement, melodic and rhythmic patterns, voice, sound effects, etc.
+   * defines how all game audio assets will sound
+* Game audio DNA creation allows a memorable, immersive and fully holistic gaming experience
+When you create this track, you basically show the client all of the elements that you will use, managing their expectations.
+* Can create several of these and let them choose the direction to go.
+
+
+Gameplay themes, sound design, trailers, social media content
+* A brand asset, deliver the meaning of the game to audience
+What you need
+Clear vision of the project
+* Which role audio will play in the game
+* how it aligns with other elements
+* What are the limitations: budget, technical, platform
+Research on competitors
+* How others use audio in their games
+* Define strengths and weaknesses
+* Cliches, things people expect, things to avoid
+Understanding your audience
+* Who you deliver to
+* Needs of your target audience for your game
+* Which experience they are looking for (adventure, comfort, etc.)
+Write it down
+This can come together intuitively, but write it down
+* Write it down before you open your daw.
+* Your ideas, thoughts, why you are having those thoughts
+* Need a clear vision. Will help you stay focused
+* Will facilitate your communication with the client, and give them something tangible to reference
+Dissecting Audio DNA
+* Mood and atmosphere
+* Music genre
+* Instrumentation
+   * Why?
+* Key
+   * Depending on track
+* Chord progressions
+   * Characters, themes, etc.
+* Leitmotifs
+Define:
+* Location themes, Character themes, Trailers, Narrative highlights, Sound effects, Stingers, Social media content
+
+
+Can take months, years, etc. to finish a soundtrack
+* Without a DNA to reference, evolving music can go off track over the course of months or years.
+Engaging Audience
+* Release as DLC
+* Release on streaming
+* Bonuses for sponsors, patrons, etc.
+* Discord
+* Social media
+* PR activities
+Granular Synthesis
+What is it
+* Grains, dust, artifacts in digital imagery, etc.
+* Granules are never alone. We can see fields of grain, images, fabrics, shapes, etc.
+Take little portions or grains of an audio file and combine them to create something new.
+  
+
+Can make something totally new and unique
+History:
+* Theory - dennis gabor
+* Splicing tape - iannis xenakis
+* Computer - curtis roads
+* Real-time - barry truax
+How does it work
+Need a sample to granulate
+Grain size - how long a particular grain should be
+Number of grains:
+* Hz rate:
+* Sync: timeline
+* Density: how many grains at a moment play simultaneously
+Phase, pitch shift, harmonic, volume level
+Gets interesting when we randomize or automate
+Software
+* CSound: used in the 80s, need to actually write code in an editor
+* Max/MSP: programming environment but visual.
+   * Examples such as sugarSynth, granulator in Ableton
+* Padshop: much more music oriented
+* The Mangle
+* Phaseplant
+* Serum 2, etc.
+* Unfiltered Audio: Byome
+* Paul X Stretch
+* Traveler
+* Whoosh
+* Glitchmachines: Polygon, etc.
+* Reaktor S-Layer: random multisample instrument
+   * Really great with whooshes or such, creating great sounds
+* Sound Particles
+   * One-of-a-kind
+   * Stand-alone program. 3D simulator for audio
+curtisroads.com
+  
+
+Each software does it differently
+Cases:
+Portal to Wherever
+* Sample of strung-together granular synthesis samples
+* Random velocity, grain size/sec
+Fireplace:
+* Recording of paper-handling crinkling
+* Short grains, 14ms
+* Density of 7 grains: with 14ms grain size = new grain each millisecond, 500 grains per second
+* Add some noise, etc.
+   * Pitch up sample harmonic, 30 grains: get something that is not quite white or pink noise, etc., more organic
+Scrub
+Textures, loops, one shot
+Sound iteration, variation
+Runtime granular
+* Costly for CPU
+Wwise: SoundSeed grain
+* Grain controls are quite finicky
+Crankcase Audio: Rev2
+fmod: Scatterer Instrument
+Metagrain
+Integrating into workflow
+* Record for texture, not “sounds”
+   * Record a continuous sound
+* Curate your source
+   * Clean up the recording
+   * Delete silence
+   * Make it bonkers by bouncing with effect chains, etc.
+* Be playful
+
+
+Why care?
+* Another tool
+* Lots of variety
+* Transformative
+* Random, unexpected results
+* Can be predictable
+* Organic sound
+* Adaptable, flexible
+Overseas Remote Networking
+* Megan Frazier
+How to be genuine
+Genuinity = energy, like listening to yourself.
+* Empathy, very gently projecting out
+* Simpler tones are generally better
+Sometimes you have to perform, but you can’t sustain that forever
+A lot of networking is remote.
+* Tone matters, can’t take your words back, etc.
+How to be consistent
+* 2/week is a good guidepost.
+* time reaching out: more about questions, not work
+* A good cadence for big follow-up, reaching out again, is about 6 weeks to 6 months
+* Annual is ok for solidly established relationships (you’ve spent an hour in zoom call together)
+* How would I like to be communicated with?
+   * Be concise
+   * Handcrafted
+   * Considerate
+   * From you, not chatgpt, etc.
+
+
+You don’t always have to work for money, but never work for free
+When to be direct or not?
+* Direct:
+   * Company is explicitly looking for help
+   * Honestly think you could be a fit
+      * There is someone out there tearing their hair out trying to find you
+         * You have to believe this
+* Foster connections
+   * Reach out to peers, not just the director, etc.
+   * Long-term play
+Cross-cultural communication
+Language instruction, cultural instruction
+Hofstede’s cultural dimensions
+* Power distance
+   * How close are superiors to those below?
+   * Can you talk directly to the director/CEO? Or do you need to go through the proper channels?
+* Individualism vs collectivism
+* Uncertainty avoidance
+   * How you culturally handle risk.
+   * China example:
+      * Get the right answers for the test, always a “right” and “wrong”. Highly risk avoidant
+   * People are less likely to write this off if you get it wrong
+How to work towards something “in the fog of war”?
+* “In the fog of war” - a goal I cannot reach realistically without a significant level-up of my current capabilities, skills, etc.
+* Phase 1: nurture
+   * Living in the fantasy for some time
+* Phase 2: goopy grow/try stuff/confidence building
+   * Action, being a beginner, learning/breaking/building things. No GPS, no progress, per se.
+* Phase 3: reality check
+   * Decision - am I gonna keep up with this? Or let it die?
+Object Resonance
+* Paul Shelley
+Characteristics of a string instrument
+* Colour of tone
+* Character
+* Volume
+* Projection
+* Responsiveness
+* Intonation
+* Clarity
+* Evenness across strings
+* Evenness across octaves
+All within 2mm, or so.
+Small changes create large responses
+Looking at Objects
+* Speed of sound - recording feedback
+   * Slow - marmer, muted
+   * Higher - brighter, clearer
+  
+
+* Flexibility - ability to allow resonance
+* Stiffness - ability to hold resonance
+* Nodes and antinodes - object doesn’t all vibrate at the same time - like in a wave
+Long, round objects
+Flat objects
+* curves/bend
+   * Long
+   * Cross - across the grain
+   * Twist
+   * Press down - pressing/curve in the middle of a cross/long bend
+Closed objects
+Complex objects
+Room:
+* Internal resonance
+* Hum in object/room
+* Cavity - room tone
+Case:
+Rubber monkey
+* Dull, not resonant
+* Soft sides - sound dissipates
+* Flexibility - allowing – too much, but over-low stiffness
+* Light but absorbent
+Plastic duck (not rubber)
+* Hard thin material - middle speed - not quality material
+* High but thin
+* Flexibility - probably not enough, bends first
+* Reflection, medium
+Granite
+* High, but rock is very thick
+* Really high - so needs to be super thin
+* Flexibility - probably not enough, but could hold it
+* Not relevant
+Cement block
+* High, but lower than rock, as it is composite
+* Not best material as composite, a bit like tarmac
+* Flexibility - not in this thickness
+Music Theory as a Tool to Enhance My Mix
+Music Theory helps in gap between musician and audio engineers
+Thorough analysis of a song
+* Form
+* Harmonic progression
+* Motif
+* Cadences
+As a sound engineer:
+* Can help parts of the music that need to be heard for music theory purposes to be heard, etc.
+* Highlight things that contribute to the music structure
+Voice Over Casting and Direction
+* Lani minella, lisa sowden
+How to find talent?
+* Ask talent for recs
+* Agents: may not send audition to everyone that would be good.
+* showcases/improv nights: setup and sound may not be the best though
+* Other casting directors
+Avoid social media
+* Social media will get you swamped
+Don’t listen to demos only: demos don’t always show what someone can do sustainably, or they could be altered.
+Directing
+* Tell your talent to move their body, not stand there like a statue
+* Don’t spend money on slow people.
+   * Should be able to get 125 lines per hour
+      * one or two takes, not three
+* Use the last take
+* 43 lines per hour = hollywood
+* Don’t let your actors read through it too much or underline things. Just let them look over it briefly.
+* Specify how loud something is (sound context, what is happening behind it, etc.)
+* Give them age, accent, timbre, etc.
+   * But don’t give them things like horoscope signs, etc. Keep it simple, tied to sound.
+* Ask for a sooner deadline
+* You cannot combine union and nonunion
+* Cannot combine in-country and out-of-country
+* File naming convention “role”_name_etc
+* promise/sign that their voice will not be used to train AI
+
+
+Demos:
+* Do not bug producers
+* Don’t cold-call agents
+* Get someone to introduce you (preferably of the opposite sex, not your competition)
+* Produce your own demos, have your own demos
+   * shure sm58 - easy mic
+   * Audacity
+* Read cold-copy without errors
+* Do something different
+Resumes:
+* 3 column format. Height, weight, eye color
+* Name in center
+* Left column: name of project
+* Middle: part that you did
+* Right: publisher/boss/company
+* If you don’t have much to put on: “special skills” - make people laugh
+* Training: classes, etc.
+   * Don’t put 20 coaches
+   * Learn how to control your own face and voice
+Have a quick skin
+Don’t quit your day job
+Building Your Ideal Career
+https://www.airwiggles.com/c/live-replays/building-your-ideal-career-a-5-step-guide-david-fairfield
+5-step guide
+Gather
+* Experiment with everything
+Get as much experiences, skills, and knowledge as possible, as rapidly as possible.
+Initiate short-term experiments as you can.
+Seek
+* Discomfort
+* Adventure
+* Community. And be community
+* Knowledge
+* Broad, bold experiments
+Inventory: knowledge, relationships, career plan, money, budget, equipment
+Risks: shiny things wasting time, analysis paralysis, arrogance killing curiosity, wanting gear to compensate
+Refine
+* Know thyself, and start editing options
+Figure out who you are.
+What fills or drains your tank?
+Prototype everything: specific career options:
+* Through writing, conversation, and short->mid term experiments
+Start building experience and connections
+Add value where you can
+Seek:
+* Mentorship and advice
+* Targeted experiments, track results
+* Fight insecurities
+Inventory: start collecting recommendations, create a zero doc
+Zero doc
+* Take the time to write down when someone compliments you.
+Risks: cutting/editing too soon, seeking comfort, not tracking patterns/lessons, becoming discouraged and stuck, not asking for recommendations
+Ikigai
+The 4 games
+* Artist game, performance game, lifestyle game, the “build and sell” game
+Don’t climb a career ladder that is leaning against the wrong wall.
+Master
+* Earn your reps: 10000 hours
+Liberate your time, earn 10000 hrs. 5 years of full-time work.
+Start making money. Grow in influence. Increase value you can offer.
+Start becoming the guide, get efficient: template, automate, subtract.
+Grow durable skills
+Learn biz, psychology, marketing
+Fight insecurities
+Inventory: Calendar
+Risks: losing curiosity and passion, creative atrophy, turning work into a ‘job’, buying dumb things
+Reap
+* Enjoy the fruits of your labor
+Learn how to enjoy again. Be the guide. Grow in leadership skills. Rediscover curiosity. Fight insecurities.
+Risks: getting lazy, protecting outdated skills/tools, ego-driven thoughts/actions, buying dumb things
+Give
+* Build a legacy
+The go-giver
+Read the ‘go giver’. Understand the learning period.
+  
+
+Risks: dwelling in the past, ego-driven behavior, hiding a legacy, being too tired to make amazing contributions (fatigue)
+
+
+  
+
+Q&A
+Passion is the spark, not the fuel
+What inspires you? When was the last time you were excited about something? Ask people who have observed you?
+Why did the passion disappear to begin with?
+What areas light me up the most? How can I be more skilled in those?
+Arrange your tasks in a importance/urgency matrix to prioritize
+People work with those that they know, like, and trust.
+Be in service to others: - that’s how you kill imposter syndrome. Give equal power to the opposite voice (what if I am good enough? What if I can provide value, if one person will be better off because of what I bring?).
+
+
+Why are you dwelling in the past?
+* What are you trying to gain from it?
+* What are you trying to soothe with it?
+Mental patterns, like dwelling on the past, are like monkey traps. You need to let go of it, and grab something else to hold and look toward in the future. What are you going to hold onto next?
+One Person Band Audio
+* Bjorn jacobsen
+   * Cujosound
+   * cujo.dk
+   * linkedin.com/in/bjorncph
+Pax Dei Audio Bible
+* What do you need, the basics for gameplay, the soundscape for the world
+   * Ambience
+      * Biome types
+      * Time of day
+   * Player actions
+      * Footsteps
+      * jump/land
+      * Surface types
+      * interactions/actions
+   * Enemies/humanoids
+      * Vox
+      * Health levels (make sounds like they are exerting more energy, etc.)
+Ambience = the sounds that you hear the most
+* Important to not be boring
+* Receives the most quality, because you hear it most often
+* Should change in volume, have variety, etc.
+* Should not be boring
+* Music and ambience should not interfere
+Should have space or silence between music sometimes.
+* Constant music gets old
+
+
+Organize: use a kanban board, or such, etc.
+How loud should my audio be?
+* Bill Lacey
+
+
+How loud are you listening?
+Consider:
+   * Most people are not sure
+   * Most rooms sound different
+   * Hearing safety
+Uncertainty can lead to:
+* Inconsistent results
+* Ineffective results
+* Listening fatigue
+* Hearing damage
+Fletcher-Munson - Equal Loudness Contours
+* Our ears do not perceive frequencies the same way at all listening levels
+   * When listening softer, the bass and treble frequencies will appear to be softer than they really are
+   * When listening louder, the reverse is true
+   * At roughly 80-85 db SPL, our ears perceive high and low frequencies accurately in proportion to mid-range frequencies. This should be your target.
+  
+
+  
+
+Listen at a reference level
+* In proportion to the size of your listening space
+* 85 db is for theatrical stages approximately 20000 cubic feet
+* Smaller the room, the closer you are to the speakers, the lower your reference level should be
+* Bill’s room is 15.5 W * 17.5 L * 8.5 H = 2300 cubic feet
+   * 78 dB
+How do I set my levels?
+You need a sound-level meter - amazon, radioshack, etc. check ebay
+* Set it to slow, C weighting
+Free app from national institute for occupational safety and health (NIOSH): loudness over time
+Understanding loudness part 3 - calibrating your monitors - Mike Thornton
+https://youlean.co/online-loudness-meter/
+1. Pink noise generator
+   1. Send through one speaker
+   2. Set up sound-level meter, pointed toward speakers
+2. Headphones?
+   1. Work on monitors/speakers, and reference with headphones
+   2. No official practices on loudness measurements with headphones
+   3. DIY, not as scientific
+      1. 4 ways to measure headphone loudness levels (Decibel) - video
+3. Use dialogue as a reference
+   1. Dialogue should usually sit at about -24 dB LUFS in your daw. You can try switching back and forth from your monitors and headphones to see what level sounds right in your headphones
+4. Once you have established the correct listening levels for your environment, don’t change the level
+   1. Unless you have an extremely good reason to do so
+Loudness Meters
+* Used to determine how loud our ears perceive sound over time
+   * VisLM - NUGEN Audio
+   * YOULEAN LOUDNESS METER-2
+Two useful measurements
+* short-term/momentary value
+   * In the past few seconds
+* long-term/integrated value
+   * Average over the course of what you’re listening to
+Specs you are provided will refer to the long-term/integrated measurement
+The longer the program measurement, the easier it is to accommodate delivery specs
+Being in spec doesn’t mean your mix is great
+Challenges
+* Different loudness specs by region, network, platform
+   * Sometimes delivery requires multiple specs
+* Recommendations
+   * Work in your daw to -24 dB LUFS
+   * Put loudness meter as the last plugin in your master fader
+      * Average dialogue should fit in -24 dB
+   * Never change the balance between your speaker loudness and your DAW
+   * In that context, sound that is meant to be soft will translate properly
+   * Sounds that are supposed to be loud will sound loud, and meters will support that
+   * For continuously loud content (a mix or trailer destined for youtube at -14, etc.), create separate output paths and use a limiter to increase the level to match the delivery spec.
+      * Don’t listen at -14.
+      * Bounce it, turn volume down, and listen
+Working with Sound - Rob Bridgett
+Leading with Sound - Rob Bridgett
+Game Audio Mixing - Alex Riviere
+* Mix at a volume that matches listening level of most players
+* Try to record, create, and process content like there would be no live mixing later
+   * Content should work, as much as possible, out of the box in the mix, without too much additional processing.
+   * Before exporting from DAW and such, make sure you consistently master contents, at least paper type of sound category.
+Listen to this podcast–your ears will thank you for it (with Genelec), production expert website
+
+
+Permissible Daily noise exposure
+* 80 dB - for only 8 hours per day
+Brian Scmidt - hearing health in video games, talk at GDC 2024
+WHO - world health org
+* Duration of safe listening time decreases rapidly as the sound intensity increases
+   * For example, if one listens at an average volume of 80dB, one can keep listening safely for up to 40 hours a week.
+  
+
+Shoot for 80dB
+Ambience Design 101
+* Zaira Martinez
+What
+Ambience:
+* We don’t usually notice it.
+* It is cohesive with everything else
+* Has an impact in our emotions and behavior
+Why
+Purpose
+* Help communicate story better, support narrative
+* Give information about the place, how we should feel or react
+* Create a foundation for other auditory elements: dialogue, sfx, music
+How
+Workflow
+* Observe
+   * Try to understand the narrative
+   * Know what the story is about
+   * “Listen” to the places you’re watching (in your head)
+* Identify and write down the ambience needs
+* Prepare a “draft” toolkit
+   * Which type of sounds will I have to look for the most? (birds, traffic, seaside, industrial?)
+   * Need more indoors or outdoors? Room tones, city rumbles?
+   * What is the story trying to communicate? (busy, empty, quiet)
+* Find sounds
+   * Create folders and categorize sounds by intended use
+* Build two or more versions of the same space
+   * Prevent it from sounding repetitive
+   * Being at the park in the morning doesn’t feel/sound the same as night
+Key Elements
+Narrative
+* Story - gives information about environment
+* Type of locations, weather, presence of background
+Contrast
+* Impact
+* Between quieter scene and louder one, etc.
+* Between two different moments in same scene
+Presence
+* Makes it convincing
+* Even quiet spaces have presence, are not totally silent
+Texture
+* Makes it convincing
+* The types of surfaces, materials, etc. the qualities of these things (heels on pavement vs carpet, etc.)
+3-layer approach
+* Allows for well-balanced soundscape with diverse and dynamic elements
+Layer 1
+* Steady and anchoring sounds
+   * Room tones, light buzzes, city/beach rumbles
+   * Mostly constant, still or flat content, doesn’t change at all
+   * Give us information about size of room, distance, etc. locating ourselves in a space
+Layer 2
+* Dynamics, adding movement and presence
+* Birds chirping, dogs barking, footstep traffic, leaves rustling
+* More dynamism
+Layer 3
+* Directly linked to narrative
+* Further detail and dynamics to soundscape
+* Sounds can be the toppings
+Sometimes 1 or 2 layers is enough
+5.1 channel example:
+  
+
+  
+
+EQ to your advantage
+* Remove unwanted hiss and hum
+* Listen
+* Subtract what doesn’t serve you and create space for content that does
+Context is everything
+* Compare your EQ’d files with the rest of the layers, everytime
+* Don’t just solo, listen to all layers as a whole
+Balance
+* Each layer will add to the overall frequency spectrum
+* Don’t overpower a particular range, unless that is your specific goal
+Wet vs dry
+* Wet sounds could blend and communicate better. (natural sounds (dog in street), over reverb/delay in post)
+* Ambience is more natural when recorded in natural setting
+* Depends on particular needs
+Walla
+take out any words that can be legible
+Add walla if wanted
+Quietest ambience: maybe -50 dB,
+loudest: -30dB? (concert, or such)
+Q&A
+Very quiet spaces (like apartment)
+* Add things from outside the space, filter out higher frequencies, so there is the life around the space, even if nothing much is occurring within.
+Dialogue that is not distracting
+* Take out some higher frequencies (makes it less distinguishable, and a bit more distant)
+* Along with fading and bouncing assets together, etc.
+Building Audio Brand Through Content Creation
+* Venus Theory
+How do most people consume Youtube?
+* Like a podcast
+* They have limited time, they can’t watch everything they “watch”
+Your voice may be divisive (some may like your ideas, others not), but that’s ok. Those who love you know what to expect.
+A social media channel is a portfolio with a bunch of exposure
+Wearing different hats
+* Batch things:
+   * don’t be filming and editing as you are writing
+   * When you’re making music, don’t mix and master. Etc.
+* Aim for efficiency above everything
+You can’t get your time back. How do you make sure it’s worth it?
+Everyday, you can only do 5 things. Only 1 of those things can be a priority
+If you’re trying to do everything, then it will be a race to the bottom
+* You will work for free if you do everything.
+Say yes to things you are uncomfortable with
+* Figure it out as you go
+* Decide how you want to do things, put your name/stamp on it
+What else can I do with this?
+If I’m gonna make this youtube video, what else can I do with it?
+* If I’m going to make this free product, why not put it in my video?
+* How can I do this so that the money I get gives me the time to do what I want to?
+SEAS
+* Search: would people want to watch it?
+* Excited: am I actually excited to make this?
+* Audience match: Does an audience want this?
+* Simplicity: is this within my abilities to do?
+And, is it a “me” video?
+Every video can be a video, but is it a youtube video? Is it a video by me? Is it your voice?
+Still, every project should be different and be unique
+Ideas above gear.
+* You can’t master your way out of a bad mix, mix your way out of a bad arrangement, and you arrange your way out of a bad idea for a song
+You set the impression
+* The cringe sometimes is what draws people in
+* Your “crazy makeup” is what people remember.
+* The average person watched 1 video from your channel
+In the creative act:
+* Silence the critic, save the editor
+* Let your ideas fly, let go of your inner critic
+If someone hasn’t done something you admire or can aspire to, you don’t need to worry about their opinion. If they don’t have expertise or skill in that area, then don’t care what they think.
+Sonic Branding and UX Audio
+* Christopher Hegstrom
+How audio for products and games influence each other
+
+
+History of Sonic Notification:
+* Church bells
+   * In addition to call to worship, church bells were used to inform residents about
+      * Weddings and funerals
+      * Victory celebrations
+      * Clock chimes
+      * Warnings
+* Doorbells
+   * 1800s: replaced door knockers, and became widespread soonafter
+   * 1850s: integration into telephone systems
+   * 1930s: wireless doorbells used radio
+   * 1950s: multi-tone chimes
+   * 1970s: introduction of videos
+   * 2010s: smart doorbell system
+* Elevator sonification
+   * Elevator operator’s strike in 1870s: forced move toward automation of the system
+      * 1892: Buttons and chimes were introduced to communicate information
+      * 1934: Musak (elevator music) - created to calm the user and help them relax
+      * 1950: first operator-less elevator
+      * 1962: fully automatic elevator
+* Alarms and sirens
+   * Hearing the correct notification could be life-or-death
+      * Function and urgency is important
+      * Alarms are designed with dissonance and atypical rhythms to intentionally startle
+      * Sirens are designed with frequency modulation so the listener doesn’t get used to a single tone
+Ubiquitous computing:
+* Computing within the world, rather than virtual reality
+   * Requires intentionality and respect for the environment that your product will be in
+* Blend discreetly with user environments
+* Roughly the opposite of virtual reality, forcing computer to live out here in the world with people
+4F
+* Form
+* Function
+* reduce Friction
+   * https://developer.apple.com/videos/play/wwdc2017/803/
+      * 28:09
+* enhance Flow
+Standing out in Sensory Overload
+* Arcade games had to entice players with sounds and lights
+* The arcade attract loops were an early example of sonic branding in video games
+UX audio goals
+* Do no harm (unobtrusive) - don’t call attention to yourself
+* Familiar, but not identifiable (not so literal. Allude to something, but not “that’s my dog”))
+* Sounds acceptable the 1st and the 1000th time you hear it
+Progress with no north star
+* Determine interaction design goals
+* Assess overall mood/vibe
+* Go wide to narrow it down
+   * Mild to wild
+* Discussions on what resonates with people
+* Hone in on a direction
+* Know it could change at any time
+https://youtu.be/TxV752sRGH8
+
+
+So you want to release a sound library…
+Who
+Customer or audience
+* Think like a sound editor
+   * Game vs linear needs
+   * String-outs vs single files
+      * Going in the direction of string-outs
+   * What are the holes in others’ libraries? - fill those holes
+Why
+Reverse order of appropriate motivations:
+* Money
+* Reputation
+* Relationship building
+* Practice
+* Passion
+Importance of a brief:
+* Write the product description before creating the library
+   * Change it as ideas and library evolves
+What
+Research: 2 approaches…
+* Screw research, just be inspired
+   * Follow passion and don’t bother with research
+   * What do you struggle to find in your own library?
+   * What resources do you have access to?
+* Get some data
+   * Know the market
+   * Gap analysis: holes in the market, in perspective, content, etc.
+   * Ask your colleagues or community what they want
+Do both.
+Concept
+* Evergreen vs new territory
+* Designed vs “construction kit” of parts to be put together
+* Make it unique: subject, texture, perspective, technique, etc.
+* Make or use creative limitations
+How
+Organizing
+* Never throw raw files away
+* Ensure you can roll back changes or versions
+* Retain all edited files even if you don’t ship them in the library
+Recording
+* Do the best with what you have - every room has issues to address
+* use practice sessions and “throwaway work”
+* Scale your variations to your market
+* A word about noise: noise should be consistent. Can be there, because when it is put in context, it can often be forgiven
+* Backup your stuff
+Designing
+* You do you
+* Don’t do anything your customers will wish you hadn’t
+   * Don’t go too aggressive with processing, etc.
+   * Be clear about what you are offering. Don’t make your customer wish you could undo something
+* Don’t overwhelm the customer with mic choice: making your solution not a solution. Too complicated
+* Backup your stuff
+Mastering
+* Bit depth: 24 cap
+* Headroom varies, but just don’t clip
+* Loudness consistency: make sound events consistent proportionally to other sound events, as expected in life
+* The material tells you what it wants
+* Do no harm: the people who use it will throw crazy effects on it in their work, and you don’t want your stuff to easily clip
+* Backup your stuff
+Metadata
+* Customer expectations: formatting, metadata fields, finding a sound at the right time
+* UCS v8.2 and Kai Paquin’s metadata guide
+* Categorize by most important attribute (are the birds or the forest more important for use cases?)
+* Consider how editors might search for it
+Sound miner
+Etc.
+* You don’t have to do this alone
+* You’re making “soundware”, treat it like software
+   * Alpha testing
+   * Beta testing
+* Make everything you do shippable
+When
+What is “Done”?
+* Resolution > completion
+* Kill your darlings
+* QC pitfalls
+   * Spelling and factual errors in metadata or marketing
+   * Filler assets
+   * Verbal slates left in recordings
+   * Uneven loudness for similar sound events
+   * No actual keywords (individual words)
+Last decisions
+* Did you meet your goals?
+* Do you want to ask others for feedback?
+* Will you have the time and energy to act upon feedback?
+* You never have to release anything
+Marketing
+* No one buys things they don’t know about
+* Market is small
+* Market is incredibly crowded
+* Promoting yourself is always awkward
+Phases of marketing
+* Pre-release: announce
+* Release: celebrate
+* Post-release: remind
+* “The drum beat” of ongoing marketing
+Marketing collateral
+Must haves:
+* Product image
+* Sound demo
+* Metadata list (PDF)
+* EULA (PDF)
+   * Read the EULAs you have, and talk to an IP lawyer
+Nice-to-haves:
+* Teasers
+* Release video/trailer
+* BTS featurette videos
+* “in-use” videos/demos
+* booklets/PDFs
+Where
+Commerce platform
+* Distribution vs direct sales
+   * Website
+   * Customer service
+   * Mailing list
+   * Marketing support
+* Your time vs your money
+Pricing
+* Availability
+* Comparable product prices
+* Value offered
+Conclusion
+* Libraries are always worth doing, even if you don’t release them
+* Rewards here are often not monetary
