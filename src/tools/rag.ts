@@ -95,11 +95,12 @@ export const ragTool = tool(
   {
     name: "document_search",
     description:
-      "Searches internal project documentation for information about " +
-      "LangChain, LangGraph, RAG, vector embeddings, structured logging, " +
-      "and the agent's tools. Use this when the user asks a technical question " +
-      "about how this project works, the tools available, or these AI concepts. " +
-      "Returns the most relevant document passages with source attribution.",
+      "Search the loaded knowledge base documents for information. " +
+      "Use this tool whenever the user asks about any topic that might be " +
+      "related to David, sound design, or on how what we see affects what we hear." +
+      "Always try this tool FIRST before using web search or your own knowledge, " +
+      "especially when the question seems personal or specific rather than general. " +
+      "Returns the most relevant passages with the source document name.",
     schema: z.object({
       query: z
         .string()
