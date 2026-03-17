@@ -4,6 +4,7 @@ import { ChatAnthropic } from "@langchain/anthropic";
 import { HumanMessage, BaseMessage } from "@langchain/core/messages";
 import { calculatorTool } from "./tools/calculator.js";
 import { webSearchTool } from "./tools/webSearch.js";
+import { ragTool } from "./tools/rag.js";
 import logger from "./logger.js";
 
 // ── LLM ──────────────────────────────────────────────────────────────────────
@@ -14,8 +15,8 @@ const model = new ChatAnthropic({
 });
 
 // ── Tools ─────────────────────────────────────────────────────────────────────
-// RAG tool added in Phase 2 — only calculator + webSearch for Phase 1
-const tools = [calculatorTool, webSearchTool];
+// All three Phase 1+2 tools registered
+const tools = [calculatorTool, webSearchTool, ragTool];
 
 // ── Agent ─────────────────────────────────────────────────────────────────────
 const agent = createReactAgent({ llm: model, tools });

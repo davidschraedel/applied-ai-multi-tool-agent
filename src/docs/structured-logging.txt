@@ -1,0 +1,47 @@
+Structured Logging Best Practices
+===================================
+
+Structured logging means emitting log records as machine-parseable data (usually JSON) rather than free-form human-readable strings. This enables log aggregation, filtering, and alerting in production observability systems.
+
+Why Structured Logging Matters
+--------------------------------
+- Logs can be queried and filtered by field (e.g., event="tool_call" AND tool="calculator")
+- Timestamps, log levels, and metadata are consistently formatted
+- Easier to pipe into log analysis tools (Datadog, CloudWatch, Loki, Splunk)
+- JSON logs are the default format for most modern log aggregation platforms
+
+Pino Logger
+------------
+Pino is a fast, low-overhead Node.js logger that outputs JSON by default. It is the recommended logger for production Node.js applications.
+
+Setup:
+  import pino from "pino";
+  const logger = pino({ level: "info" });
+
+Usage:
+  logger.info({ event: "tool_call", tool: "calculator", args: { expression: "2+2" } });
+  logger.error({ event: "tool_error", tool: "webSearch", error: "timeout" });
+
+Log Levels
+-----------
+- trace: Extremely verbose, disabled in production
+- debug: Verbose debugging information
+- info: Normal application events (server start, request received, tool called)
+- warn: Unexpected but recoverable situations
+- error: Errors that need attention but don't crash the process
+- fatal: Unrecoverable errors
+
+Tool Call Logging Pattern
+--------------------------
+For every tool invocation, log three events:
+1. tool_call: Log the tool name and input arguments BEFORE calling the tool
+2. tool_result: Log the tool name and return value on success
+3. tool_error: Log the tool name and error message on failure
+
+This pattern ensures that tool behavior is fully auditable — you can reconstruct exactly what the agent did and with what inputs, even if the agent retries or selects a different tool.
+
+Child Loggers
+--------------
+Use child loggers to add request-scoped context (sessionId, requestId) without repeating it in every log call:
+  const reqLogger = logger.child({ sessionId: "abc-123" });
+  reqLogger.info({ event: "agent_invoke" });

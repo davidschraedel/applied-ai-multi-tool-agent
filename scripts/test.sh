@@ -96,6 +96,20 @@ else
   fi
 fi
 
+# ── 7. RAG tool smoke test (skipped if no OpenAI key) ─────────────────────────
+echo ""
+echo "[ 7 ] RAG / document search tool"
+if [ -z "${OPENAI_API_KEY:-}" ]; then
+  echo "      SKIP: OPENAI_API_KEY not set"
+else
+  RAG_OUTPUT=$(npx tsx scripts/test-rag.ts 2>/dev/null || true)
+  if echo "$RAG_OUTPUT" | grep -q "^PASS"; then
+    ok "RAG: document retrieved with source attribution"
+  else
+    fail "RAG test failed: $RAG_OUTPUT"
+  fi
+fi
+
 # ── Summary ────────────────────────────────────────────────────────────────────
 echo ""
 echo "======================================="

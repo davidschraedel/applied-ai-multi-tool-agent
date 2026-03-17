@@ -1,0 +1,37 @@
+LangGraph and the ReAct Agent Pattern
+======================================
+
+LangGraph is a library built on top of LangChain that enables building stateful, multi-actor applications with LLMs. It models applications as directed graphs where nodes are functions and edges define control flow.
+
+What is ReAct?
+---------------
+ReAct (Reason + Act) is an agent pattern where the LLM alternates between:
+1. Reasoning about what to do next (Thought)
+2. Calling a tool (Action)
+3. Observing the result (Observation)
+4. Repeating until it can answer
+
+This pattern allows LLMs to ground their reasoning in real-world tool calls, reducing hallucination and improving accuracy on complex tasks.
+
+createReactAgent
+-----------------
+LangGraph provides a prebuilt createReactAgent function that implements the ReAct loop automatically. It handles tool binding, message formatting, and termination logic.
+
+Usage:
+  import { createReactAgent } from "@langchain/langgraph/prebuilt";
+
+  const agent = createReactAgent({ llm: model, tools: [tool1, tool2] });
+  const result = await agent.invoke(
+    { messages: history },
+    { recursionLimit: 10 }
+  );
+
+The recursionLimit parameter prevents infinite tool loops by capping the number of LLM+tool iterations per invocation.
+
+Multi-Turn Memory
+------------------
+createReactAgent is stateless by default. To support multi-turn conversations, maintain a messages array per session on the server and pass the full array on every invoke call. The agent's response (result.messages) includes the full updated message list including tool call and tool result messages.
+
+Graph State
+------------
+LangGraph manages state as a typed object that flows through the graph. For the prebuilt ReAct agent, the state is simply { messages: BaseMessage[] }. Custom graphs can add any fields to this state object.
