@@ -1,0 +1,15 @@
+# antigravity rules
+Read aiDocs/context.md for project context.
+Follow coding style in aiDocs/coding-style.md
+Ask for opinion before complex work.
+
+Before implementing, please:
+1. Show your reasoning step by step
+2. Flag anything you're uncertain about
+3. If you don't know something, say so
+   rather than guessing
+4. Before you answer, verify against
+   the project context
+
+Always work on feature branches. Never commit directly to main.
+Branch naming: calculator-tool, rag-tool, etc.
