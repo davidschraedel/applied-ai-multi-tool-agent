@@ -8,19 +8,19 @@ build/
 .testEnvVars
 
 # AI working space (local only — not shared)
-ai/
+# ai/
 
 # Personal AI tool config
-claude.md
-.cursorrules
-.antigravityrules
+# claude.md
+# .cursorrules
+# .antigravityrules
 
 # macOS
 .DS_Store
 
 # Logs
-*.log
-logs/
+# *.log
+# logs/
 
 # TypeScript
 *.tsbuildinfo
